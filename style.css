@@ -1,0 +1,102 @@
+                                                                    * {
+                                                                        margin: 0;
+                                                                        padding: 0;
+                                                                        box-sizing: border-box;
+                                                                    }
+                                                                    
+                                                                    .container {
+                                                                        margin: 0px auto;
+                                                                        max-width: 1200px;
+                                                                        background-color: antiquewhite;
+                                                                    }
+                                                                    
+                                                                    .menu-header {
+                                                                        width: 100%;
+                                                                        height: 50px;
+                                                                        background-color: #15965F;
+                                                                        border: 1px solid #F7843C;
+                                                                        position: static;
+                                                                    }
+                                                                    
+                                                                    .menu-header .container {
+                                                                        display: flex;
+                                                                        justify-content: space-between;
+                                                                        background-color: transparent;
+                                                                    }
+                                                                    
+                                                                    .menu-header h1 {
+                                                                        font-size: 20px;
+                                                                        margin-left: 20px;
+                                                                        color: #fff;
+                                                                    }
+                                                                    
+                                                                    .menu-header menu {
+                                                                        display: flex;
+                                                                        align-items: center;
+                                                                        list-style: none
+                                                                    }
+                                                                    
+                                                                    .menu-header li {
+                                                                        padding: 5px;
+                                                                        margin: 5px;
+                                                                    }
+                                                                    
+                                                                    a {
+                                                                        text-decoration: none;
+                                                                        color: #fff;
+                                                                        font-weight: 600;
+                                                                        font-size: 18px;
+                                                                    }
+                                                                    
+                                                                    .contant {
+                                                                        width: 100%;
+                                                                    }
+                                                                    
+                                                                    .apresentation .container {
+                                                                        padding: 10px;
+                                                                        position: relative;
+                                                                        height: 450px;
+                                                                        display: grid;
+                                                                        grid-template-areas: 'title title title title title' 'image image image paragraf paragraf';
+                                                                        grid-row-gap: 6px;
+                                                                    }
+                                                                    
+                                                                    .apresentation h2 {
+                                                                        color: #15965F;
+                                                                        padding: 30px;
+                                                                        font-size: 30px;
+                                                                        margin: 40px 10px;
+                                                                        grid-area: title;
+                                                                    }
+                                                                    
+                                                                    .apresentation img {
+                                                                        width: 100%;
+                                                                        grid-area: image;
+                                                                    }
+                                                                    
+                                                                    .apresentation p {
+                                                                        padding: 20px;
+                                                                        width: 300px;
+                                                                        right: 0px;
+                                                                        top: 160px;
+                                                                        font-size: 17px;
+                                                                        grid-area: paragraf;
+                                                                    }
+                                                                    
+                                                                    @media only screen and (max-width: 720px) {
+                                                                        .apresentation .container {
+                                                                            padding: 10px;
+                                                                            display: flex;
+                                                                            height: auto;
+                                                                            flex-direction: column;
+                                                                            margin: 0px auto;
+                                                                        }
+                                                                        .apresentation h2,
+                                                                        img,
+                                                                        p {
+                                                                            margin: 0px auto;
+                                                                        }
+                                                                        .apresentation img {
+                                                                            width: 80%;
+                                                                        }
+                                                                    }
